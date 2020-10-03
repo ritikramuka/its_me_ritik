@@ -12,7 +12,7 @@ img {
 }
 
 .sidebar__utils {
-  padding-top: 15px;
+  padding-top: 10px;
 }
 
 .sidebar__greating {
@@ -26,7 +26,6 @@ img {
 }
 
 .sidebar__name-title-one {
-  font-size: 1.05rem;
   line-height: 2.5rem;
 }
 
@@ -36,5 +35,5 @@ img {
 
 .sidebar__social-handle {
   position: absolute;
-  bottom: 20px;
+  bottom: 18px;
 }
