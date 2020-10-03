@@ -1,10 +1,20 @@
 import React from "react";
 import "./App.css";
+import Sidebar from "./Sidebar";
 
 function App() {
-  return <div className="App">
-    <h1>It's Me Ritik Ramuka</h1>
-  </div>;
+  return (
+    <div className="app">
+      <div className="container app__container">
+        <div className="row app__row">
+          <div className="col-lg-3 app__sidebar">
+            <Sidebar />
+          </div>
+          <div className="col-lg-9 app__content">Hello xD</div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default App;

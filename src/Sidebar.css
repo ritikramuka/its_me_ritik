@@ -1,0 +1,40 @@
+.sidebar {
+  padding-top: 20px;
+  text-align: center;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.sidebar__utils {
+  padding-top: 15px;
+}
+
+.sidebar__greating {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.sidebar__name {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.sidebar__name-title-one {
+  font-size: 1.05rem;
+  line-height: 2.5rem;
+}
+
+.sidebar__name-title-two {
+  line-height: 1.4rem;
+}
+
+.sidebar__social-handle {
+  position: absolute;
+  bottom: 20px;
+}
