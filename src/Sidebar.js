@@ -16,10 +16,17 @@ function Sidebar() {
           I STAND ON A SWEET SPOT WHERE DESIGN & CODE INTERSECTS.
         </div>
         <div className="container row sidebar__social-handle">
-            <div className="col-md-3 col-sm-6">insta</div>
-            <div className="col-md-3 col-sm-6">fb</div>
-            <div className="col-md-3 col-sm-6">git</div>
-            <div className="col-md-3 col-sm-6">mail</div>
+          <div className="col-md-3 col-sm-6">insta</div>
+          <div className="col-md-3 col-sm-6">fb</div>
+          <div className="col-md-3 col-sm-6">git</div>
+          <div
+            className="col-md-3 col-sm-6"
+            onClick={() => {
+              window.location.href = "mailto:riitk.ramuka@gmail.com";
+            }}
+          >
+            gmai
+          </div>
         </div>
       </div>
     </div>

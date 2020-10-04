@@ -1,5 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import About from "./About";
+import Resume from "./Resume";
+import Projects from "./Projects";
 import "./App.css";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
@@ -16,9 +19,15 @@ function App() {
             <div className="col-lg-9 app__content">
               <Navbar></Navbar>
               <Switch>
-                <Route exact path="/">hwloo</Route>
-                <Route exact path="/resume">heya</Route>
-                <Route exact path="/projects">hanji</Route>
+                <Route exact path="/">
+                  <About />
+                </Route>
+                <Route exact path="/resume">
+                  <Resume />
+                </Route>
+                <Route exact path="/projects">
+                  <Projects />
+                </Route>
               </Switch>
             </div>
           </div>
