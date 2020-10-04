@@ -6,6 +6,11 @@ function Navbar() {
   const [nav, setNav] = useState("About");
   useEffect(() => {
     const url = window.location.href;
+    const getPageLocation = url.substr(url.lastIndexOf("/"));
+    console.log(getPageLocation);
+    if (getPageLocation === "/") setNav("About");
+    else if (getPageLocation === "/resume") setNav("Resume");
+    else if (getPageLocation === "/projects") setNav("Projects");
   }, [nav]);
 
   return (
