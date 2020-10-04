@@ -1,0 +1,15 @@
+.navbar {
+    font-size: 1.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding-top: 17px;
+}
+
+.navbar__items {
+    display: flex;
+}
+
+.navbar__item {
+    margin-left: 15px;
+}
+
