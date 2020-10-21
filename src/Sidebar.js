@@ -20,12 +20,12 @@ function Sidebar() {
           <div className="col-md-3 col-sm-6">leet</div>
           <div className="col-md-3 col-sm-6">git</div>
           <div
-         mlh   className="col-md-3 col-sm-6"
+            className="col-md-3 col-sm-6"
             onClick={() => {
               window.location.href = "mailto:riitk.ramuka@gmail.com";
             }}
           >
-            gmai
+            gmail
           </div>
         </div>
       </div>
