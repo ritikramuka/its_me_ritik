@@ -10,7 +10,7 @@ function Navbar() {
     console.log(getPageLocation);
     if (getPageLocation === "/") setNav("About");
     else if (getPageLocation === "/resume") setNav("Resume");
-    else if (getPageLocation === "/projects") setNav("Projects");
+    else if (getPageLocation === "/portfolio") setNav("Portfolio");
   }, [nav]);
 
   return (
@@ -31,10 +31,10 @@ function Navbar() {
             </div>
           </Link>
         ) : null}
-        {nav !== "Projects" ? (
-          <Link to="./projects">
-            <div className="navbar__item" onClick={() => setNav("Projects")}>
-              Projects
+        {nav !== "Portfolio" ? (
+          <Link to="./portfolio">
+            <div className="navbar__item" onClick={() => setNav("Portfolio")}>
+              Portfolio
             </div>
           </Link>
         ) : null}
