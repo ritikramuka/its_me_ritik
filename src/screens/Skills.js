@@ -42,8 +42,8 @@ const skills = [
 
 function Skills() {
     return (
-        <div className="container about__container">
-            <h6 className="about__container-intro">What i offer</h6>
+        <div className="skills container">
+            <h6 className="skills__container-intro">What i offer</h6>
             <div className="row">
                 {skills.map(skill =>
                     <SkillCard skill={skill}></SkillCard>
