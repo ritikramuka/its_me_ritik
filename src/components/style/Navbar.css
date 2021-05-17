@@ -1,15 +1,32 @@
+.navbar__active {
+  font-size: 2.5rem;
+}
+
 .navbar {
-    font-size: 1.9rem;
-    font-weight: 500;
-    cursor: pointer;
-    padding-top: 17px;
+  font-size: 1.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 17px 0;
 }
 
 .navbar__items {
-    display: flex;
+  display: flex;
 }
 
 .navbar__item {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
+@media only screen and (max-width: 782px) {
+  .navbar__active {
+    font-size: 3.5rem;
+  }
+
+  .navbar {
+    font-size: 1.3rem;
+  }
+
+  .navbar__items {
+    display: block;
+  }
+}
