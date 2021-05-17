@@ -14,10 +14,10 @@ function App() {
       <div className="app">
         <div className="container app__container">
           <div className="row app__row">
-            <div className="col-md-3 app__sidebar">
+            <div className="col-lg-3 app__sidebar">
               <Sidebar />
             </div>
-            <div className="col-md-9 app__content">
+            <div className="col-lg-9 app__content">
               <Navbar />
               <Switch>
                 <Route exact path="/">
