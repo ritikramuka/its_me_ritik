@@ -9,11 +9,13 @@ function Sidebar() {
       <div className="sidebar__utils">
         <div className="sidebar__greating">HELLO!</div>
         <div className="sidebar__name">I'M RITIK</div>
-        <div className="sidebar__name-title-one">
-          I'M A CREATIVE WEB DEVELOPER
+        <div className="sidebar__name-title">
+          <div className="sidebar__name-title-one">
+            I'M A CREATIVE WEB DEVELOPER
         </div>
-        <div className="sidebar__name-title-two">
-          I STAND ON A SWEET SPOT WHERE DESIGN & CODE INTERSECTS.
+          <div className="sidebar__name-title-two">
+            I STAND ON A SWEET SPOT WHERE DESIGN & CODE INTERSECTS.
+        </div>
         </div>
         <div className="container row sidebar__social-handle">
           <div className="col-md-3 col-sm-6">link</div>
