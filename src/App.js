@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import About from "./screens/About";
 import Resume from "./screens/Resume";
 import Portfolio from "./screens/Portfolio";
-import Skills from "./screens/skills";
+import Skills from "./screens/Skills";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
