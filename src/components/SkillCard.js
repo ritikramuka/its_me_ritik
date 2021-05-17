@@ -1,12 +1,10 @@
 import React from "react";
 import "./style/Skillcard.css";
 
-function SkillCard({ skill: { name, icon, discription } }) {
+function SkillCard({ skill: { name, icon } }) {
   return (
-    <div className="skillCard col-lg-6">
-      <div className="icon">{icon}</div>
-      <div className="name">{name}</div>
-      <div className="text">{discription}</div>
+    <div className="skillCard col-lg-3">
+      <i className={icon} aria-hidden="true"></i>
     </div>
   );
 }

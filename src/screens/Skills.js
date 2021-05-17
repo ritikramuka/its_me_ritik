@@ -1,56 +1,68 @@
-import React from 'react'
+import React from "react";
 import SkillCard from "../components/SkillCard";
 
 const skills = [
   {
-    name: "web developer",
-    icon: "icon",
-    discription:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, harum.",
+    icon: "devicon-cplusplus-plain colored",
   },
   {
-    name: "web developer",
-    icon: "icon",
-    discription:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, harum.",
+    icon: "devicon-java-plain-wordmark colored",
   },
   {
-    name: "web developer",
-    icon: "icon",
-    discription:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, harum.",
+    icon: "devicon-javascript-plain colored",
   },
   {
-    name: "web developer",
-    icon: "icon",
-    discription:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, harum.",
+    icon: "devicon-nodejs-plain-wordmark colored",
   },
   {
-    name: "web developer",
-    icon: "icon",
-    discription:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, harum.",
+    icon: "devicon-html5-plain-wordmark colored",
   },
   {
-    name: "web developer",
-    icon: "icon",
-    discription:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, harum.",
+    icon: "devicon-css3-plain-wordmark colored",
+  },
+  {
+    icon: "devicon-react-original-wordmark colored",
+  },
+  {
+    icon: "devicon-redux-original colored",
+  },
+  {
+    icon: "devicon-express-original-wordmark colored",
+  },
+  {
+    icon: "devicon-electron-original colored",
+  },
+  {
+    icon: "devicon-git-plain-wordmark colored",
+  },
+  {
+    icon: "devicon-firebase-plain-wordmark colored",
+  },
+  {
+    icon: "devicon-mongodb-plain-wordmark colored",
+  },
+  {
+    icon: "devicon-mysql-plain colored",
+  },
+  {
+    icon: "devicon-docker-plain-wordmark colored",
+  },
+  {
+    icon: "devicon-intellij-plain-wordmark colored",
   },
 ];
 
 function Skills() {
-    return (
-        <div className="skills container">
-            <h6 className="skills__container-intro">What i offer</h6>
-            <div className="row">
-                {skills.map(skill =>
-                    <SkillCard skill={skill}></SkillCard>
-                )}
-            </div>
-        </div>
-    )
+  return (
+    <div className="skills">
+      <h6 className="skills__container-intro">What i offer</h6>
+      <div className="row">
+        {skills.map((skill) => (
+          <SkillCard skill={skill}></SkillCard>
+        ))}
+      </div>
+    </div>
+  );
 }
 
-export default Skills
+export default Skills;
