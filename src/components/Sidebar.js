@@ -1,6 +1,6 @@
 import React from "react";
-import "./Sidebar.css";
-import profile from "./images/img.jpg";
+import "./style/Sidebar.css";
+import profile from "../images/ritik.jpg";
 
 function Sidebar() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
-import "./Resume.css";
-import ToolCard from "./ToolCard";
+import "./style/Resume.css";
+import ToolCard from "../components/ToolCard";
 
 const tools = [
   {

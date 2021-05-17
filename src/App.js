@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import About from "./About";
-import Resume from "./Resume";
-import Projects from "./Projects";
+import About from "./screens/About";
+import Resume from "./screens/Resume";
+import Projects from "./screens/Projects";
 import "./App.css";
-import Navbar from "./Navbar";
-import Sidebar from "./Sidebar";
+import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
