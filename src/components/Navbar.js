@@ -11,6 +11,7 @@ function Navbar() {
     if (getPageLocation === "/") setNav("About");
     else if (getPageLocation === "/resume") setNav("Resume");
     else if (getPageLocation === "/portfolio") setNav("Portfolio");
+    else if (getPageLocation === "/skills") setNav("Skills");
   }, [nav]);
 
   return (
@@ -24,17 +25,24 @@ function Navbar() {
             </div>
           </Link>
         ) : null}
-        {nav !== "Resume" ? (
-          <Link to="./resume">
-            <div className="navbar__item" onClick={() => setNav("Resume")}>
-              Resume
-            </div>
-          </Link>
-        ) : null}
         {nav !== "Portfolio" ? (
           <Link to="./portfolio">
             <div className="navbar__item" onClick={() => setNav("Portfolio")}>
               Portfolio
+            </div>
+          </Link>
+        ) : null}
+        {nav !== "Skills" ? (
+          <Link to="./skills">
+            <div className="navbar__item" onClick={() => setNav("Skills")}>
+              Skills
+            </div>
+          </Link>
+        ) : null}
+        {nav !== "Resume" ? (
+          <Link to="./resume">
+            <div className="navbar__item" onClick={() => setNav("Resume")}>
+              Resume
             </div>
           </Link>
         ) : null}

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import About from "./screens/About";
 import Resume from "./screens/Resume";
 import Portfolio from "./screens/Portfolio";
+import Skills from "./screens/skills";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
@@ -17,16 +18,19 @@ function App() {
               <Sidebar />
             </div>
             <div className="col-md-9 app__content">
-              <Navbar/>
+              <Navbar />
               <Switch>
                 <Route exact path="/">
                   <About />
                 </Route>
-                <Route exact path="/resume">
-                  <Resume />
-                </Route>
                 <Route exact path="/portfolio">
                   <Portfolio />
+                </Route>
+                <Route exact path="/skills">
+                  <Skills />
+                </Route>
+                <Route exact path="/resume">
+                  <Resume />
                 </Route>
               </Switch>
             </div>
