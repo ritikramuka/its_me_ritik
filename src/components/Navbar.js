@@ -15,37 +15,44 @@ function Navbar() {
   }, [nav]);
 
   return (
-    <div className="navbar">
+    <div className="navbar navbar navbar-expand-lg">
       <div className="navbar__active">{nav}</div>
-      <div className="navbar__items">
-        {nav !== "About" ? (
-          <Link to="./">
-            <div className="navbar__item" onClick={() => setNav("About")}>
-              About
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <i class="fa fa-align-justify"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div className="navbar__items navbar-nav ml-auto">
+          {nav !== "About" ? (
+            <Link to="./">
+              <div className="navbar__item" onClick={() => setNav("About")}>
+                About
             </div>
-          </Link>
-        ) : null}
-        {nav !== "Portfolio" ? (
-          <Link to="./portfolio">
-            <div className="navbar__item" onClick={() => setNav("Portfolio")}>
-              Portfolio
+            </Link>
+          ) : null}
+          {nav !== "Portfolio" ? (
+            <Link to="./portfolio">
+              <div className="navbar__item" onClick={() => setNav("Portfolio")}>
+                Portfolio
             </div>
-          </Link>
-        ) : null}
-        {nav !== "Skills" ? (
-          <Link to="./skills">
-            <div className="navbar__item" onClick={() => setNav("Skills")}>
-              Skills
+            </Link>
+          ) : null}
+          {nav !== "Skills" ? (
+            <Link to="./skills">
+              <div className="navbar__item" onClick={() => setNav("Skills")}>
+                Skills
             </div>
-          </Link>
-        ) : null}
-        {nav !== "Resume" ? (
-          <Link to="./resume">
-            <div className="navbar__item" onClick={() => setNav("Resume")}>
-              Resume
+            </Link>
+          ) : null}
+          {nav !== "Resume" ? (
+            <Link to="./resume">
+              <div className="navbar__item" onClick={() => setNav("Resume")}>
+                Resume
             </div>
-          </Link>
-        ) : null}
+            </Link>
+          ) : null}
+        </div>
       </div>
     </div>
   );
