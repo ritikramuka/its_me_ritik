@@ -48,7 +48,7 @@ const tools = [
 function Resume() {
   return (
     <div className="resume">
-      <div className="container resume__container">
+      <div className="resume__container">
         <div className="row">
           <div className="col-lg-6 education">
             <h4>Education</h4>
