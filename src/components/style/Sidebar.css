@@ -25,6 +25,10 @@ img {
   font-weight: 500;
 }
 
+.sidebar__name-title {
+  margin: auto;
+}
+
 .sidebar__name-title-one {
   line-height: 2.5rem;
 }
@@ -34,5 +38,6 @@ img {
 }
 
 .sidebar__social-handle {
+  position: absolute;
   bottom: 18px;
 }
