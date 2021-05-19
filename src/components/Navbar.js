@@ -19,7 +19,7 @@ function Navbar() {
       <div className="navbar__active">{nav}</div>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon">
-          <i class="fa fa-align-justify"></i>
+          <span class="iconify" data-icon="bi:list" data-inline="false"></span>
         </span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
