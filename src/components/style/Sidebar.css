@@ -41,3 +41,12 @@ img {
   position: absolute;
   bottom: 18px;
 }
+
+.git {
+  font-size: 10px;
+}
+
+.iconify {
+  width: 2rem;
+  height: 2rem;
+}
