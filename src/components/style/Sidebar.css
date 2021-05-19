@@ -42,11 +42,37 @@ img {
   bottom: 18px;
 }
 
-.git {
-  font-size: 10px;
+.iconify {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 2px;
 }
 
-.iconify {
-  width: 2rem;
-  height: 2rem;
+.neumorphic-btn {
+  border: none;
+  border-radius: 40px;
+  color: #535D74;
+  background-color: var(--back-color);
+  box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15),
+    -7px -7px 20px rgba(255, 255, 255, 1),
+    inset 0px 0px 4px rgba(255, 255, 255, 0.2),
+    inset 7px 7px 15px rgba(55, 84, 170, 0),
+    inset -7px -7px 20px rgba(255, 255, 255, 0),
+    0px 0px 4px rgba(255, 255, 255, 0) !important;
+  transition: box-shadow 0.25s ease !important;
+}
+
+.neumorphic-btn:active {
+  box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15),
+    -7px -7px 20px rgba(255, 255, 255, 1),
+    inset 0px 0px 4px rgba(255, 255, 255, 0),
+    inset 7px 7px 15px rgba(55, 84, 170, 0.15),
+    inset -7px -7px 20px rgba(255, 255, 255, 1),
+    0px 0px 4px rgba(255, 255, 255, 0.2) !important;
+}
+
+@media only screen and (max-width: 782px) {
+  .iconify{
+    margin: 4px;
+  }
 }

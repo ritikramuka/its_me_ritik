@@ -18,16 +18,16 @@ function Sidebar() {
         </div>
         </div>
         <div className="container row sidebar__social-handle">
-          <div className="col-md-3 col-6"><span class="iconify" data-icon="ant-design:linkedin-filled" data-inline="false"></span></div>
-          <div className="col-md-3 col-6"><span class="iconify" data-icon="simple-icons:leetcode" data-inline="false"></span></div>
-          <div className="col-md-3 col-6"><span class="iconify" data-icon="ant-design:github-filled" data-inline="false"></span></div>
+          <div className="col-md-3 col-6"><span class="iconify neumorphic-btn" data-icon="ant-design:linkedin-filled" data-inline="false"></span></div>
+          <div className="col-md-3 col-6"><span class="iconify neumorphic-btn" data-icon="simple-icons:leetcode" data-inline="false"></span></div>
+          <div className="col-md-3 col-6"><span class="iconify neumorphic-btn" data-icon="ant-design:github-filled" data-inline="false"></span></div>
           <div
             className="col-md-3 col-6"
             onClick={() => {
               window.location.href = "mailto:riitk.ramuka@gmail.com";
             }}
           >
-            <span class="iconify" data-icon="simple-icons:gmail" data-inline="false"></span>
+            <span class="iconify neumorphic-btn" data-icon="mdi:gmail" data-inline="false"></span>
           </div>
         </div>
       </div>

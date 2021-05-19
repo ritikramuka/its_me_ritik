@@ -13,13 +13,31 @@
   display: flex;
 }
 
+.navbar__active {
+  border: none;
+  border-radius: 40px;
+  color: #535D74;
+  background-color: var(--back-color);
+  box-shadow: inset 0px 0px 4px rgba(255, 255, 255, 0),
+    inset 7px 7px 15px rgba(55, 84, 170, 0.15),
+    inset -7px -7px 20px rgba(255, 255, 255, 1);
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  padding: 10px 30px;
+}
+
 .navbar__item {
   margin-left: 15px;
+  font-size: 20px;
+  border: none;
+  padding: 10px 30px;
 }
 
 @media only screen and (max-width: 782px) {
   .navbar__active {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+    margin-right: auto;
   }
 
   .navbar {
@@ -28,5 +46,9 @@
 
   .navbar__items {
     display: block;
+  }
+
+  .navbar__item {
+    margin: 15px 0;
   }
 }

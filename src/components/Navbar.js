@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 import "./style/Navbar.css";
 
 function Navbar() {
-  const [nav, setNav] = useState("About");
+  const [nav, setNav] = useState("ABOUT");
   useEffect(() => {
     const url = window.location.href;
     const getPageLocation = url.substr(url.lastIndexOf("/"));
     console.log(getPageLocation);
-    if (getPageLocation === "/") setNav("About");
-    else if (getPageLocation === "/resume") setNav("Resume");
-    else if (getPageLocation === "/portfolio") setNav("Portfolio");
-    else if (getPageLocation === "/skills") setNav("Skills");
+    if (getPageLocation === "/") setNav("ABOUT");
+    else if (getPageLocation === "/resume") setNav("RESUME");
+    else if (getPageLocation === "/portfolio") setNav("PORTFOLIO");
+    else if (getPageLocation === "/skills") setNav("SKILLS");
   }, [nav]);
 
   return (
@@ -19,36 +19,36 @@ function Navbar() {
       <div className="navbar__active">{nav}</div>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon">
-          <span class="iconify" data-icon="bi:list" data-inline="false"></span>
+          <span class="iconify neumorphic-btn" data-icon="bi:list" data-inline="false"></span>
         </span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div className="navbar__items navbar-nav ml-auto">
-          {nav !== "About" ? (
+          {nav !== "ABOUT" ? (
             <Link to="./">
-              <div className="navbar__item" onClick={() => setNav("About")}>
-                About
+              <div className="navbar__item neumorphic-btn" onClick={() => setNav("ABOUT")}>
+                ABOUT
             </div>
             </Link>
           ) : null}
-          {nav !== "Portfolio" ? (
+          {nav !== "PORTFOLIO" ? (
             <Link to="./portfolio">
-              <div className="navbar__item" onClick={() => setNav("Portfolio")}>
-                Portfolio
+              <div className="navbar__item neumorphic-btn" onClick={() => setNav("PORTFOLIO")}>
+                PORTFOLIO
             </div>
             </Link>
           ) : null}
-          {nav !== "Skills" ? (
+          {nav !== "SKILLS" ? (
             <Link to="./skills">
-              <div className="navbar__item" onClick={() => setNav("Skills")}>
-                Skills
+              <div className="navbar__item neumorphic-btn" onClick={() => setNav("SKILLS")}>
+                SKILLS
             </div>
             </Link>
           ) : null}
-          {nav !== "Resume" ? (
+          {nav !== "RESUME" ? (
             <Link to="./resume">
-              <div className="navbar__item" onClick={() => setNav("Resume")}>
-                Resume
+              <div className="navbar__item neumorphic-btn" onClick={() => setNav("RESUME")}>
+                RESUME
             </div>
             </Link>
           ) : null}
