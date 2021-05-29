@@ -25,28 +25,28 @@ function Navbar() {
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div className="navbar__items navbar-nav ml-auto">
           {nav !== "ABOUT" ? (
-            <Link to="./">
+            <Link to="./" style={{ textDecoration: 'none' }}>
               <div className="navbar__item neumorphic-btn" onClick={() => setNav("ABOUT")}>
                 ABOUT
             </div>
             </Link>
           ) : null}
           {nav !== "PORTFOLIO" ? (
-            <Link to="./portfolio">
+            <Link to="./portfolio" style={{ textDecoration: 'none' }}>
               <div className="navbar__item neumorphic-btn" onClick={() => setNav("PORTFOLIO")}>
                 PORTFOLIO
             </div>
             </Link>
           ) : null}
           {nav !== "SKILLS" ? (
-            <Link to="./skills">
+            <Link to="./skills" style={{ textDecoration: 'none' }}>
               <div className="navbar__item neumorphic-btn" onClick={() => setNav("SKILLS")}>
                 SKILLS
             </div>
             </Link>
           ) : null}
           {nav !== "RESUME" ? (
-            <Link to="./resume">
+            <Link to="./resume" style={{ textDecoration: 'none' }}>
               <div className="navbar__item neumorphic-btn" onClick={() => setNav("RESUME")}>
                 RESUME
             </div>

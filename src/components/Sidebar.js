@@ -18,9 +18,9 @@ function Sidebar() {
         </div>
         </div>
         <div className="container row sidebar__social-handle">
-          <div className="col-md-3 col-6"><span class="iconify neumorphic-btn" data-icon="ant-design:linkedin-filled" data-inline="false"></span></div>
-          <div className="col-md-3 col-6"><span class="iconify neumorphic-btn" data-icon="simple-icons:leetcode" data-inline="false"></span></div>
-          <div className="col-md-3 col-6"><span class="iconify neumorphic-btn" data-icon="ant-design:github-filled" data-inline="false"></span></div>
+          <div className="col-md-3 col-6"><a href="https://www.linkedin.com/in/ritik-ramuka-018b6318b/" target="_blank" rel="noopener noreferrer"><span class="iconify neumorphic-btn" data-icon="ant-design:linkedin-filled" data-inline="false"></span></a></div>
+          <div className="col-md-3 col-6"><a href="https://leetcode.com/RitikRamuka/" target="_blank" rel="noopener noreferrer"><span class="iconify neumorphic-btn" data-icon="simple-icons:leetcode" data-inline="false"></span></a></div>
+          <div className="col-md-3 col-6"><a href="https://github.com/ritikramuka" target="_blank" rel="noopener noreferrer"><span class="iconify neumorphic-btn" data-icon="ant-design:github-filled" data-inline="false"></span></a></div>
           <div
             className="col-md-3 col-6"
             onClick={() => {

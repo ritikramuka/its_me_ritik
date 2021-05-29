@@ -16,7 +16,7 @@
 .navbar__active {
   border: none;
   border-radius: 40px;
-  color: #535D74;
+  color: #535d74;
   background-color: var(--back-color);
   box-shadow: inset 0px 0px 4px rgba(255, 255, 255, 0),
     inset 7px 7px 15px rgba(55, 84, 170, 0.15),
